@@ -1,4 +1,4 @@
-# Local-SD-Generator-AMD
+
 Простой WinForms-интерфейс для локальной генерации изображений на видеокартах AMD через Vulkan (stable-diffusion.cpp). Выбор моделей, LoRA, разрешения, сида и папки сохранения. Для тех, кому неудобна консоль
 # Local SD Generator (AMD UI)
 
