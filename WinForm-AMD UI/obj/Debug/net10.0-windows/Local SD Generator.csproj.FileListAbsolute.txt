@@ -1,0 +1,18 @@
+C:\Users\yoohsy\Desktop\Практические работы\-\WinForm-AMD UI\bin\Debug\net10.0-windows\Local SD Generator.exe
+C:\Users\yoohsy\Desktop\Практические работы\-\WinForm-AMD UI\bin\Debug\net10.0-windows\Local SD Generator.deps.json
+C:\Users\yoohsy\Desktop\Практические работы\-\WinForm-AMD UI\bin\Debug\net10.0-windows\Local SD Generator.runtimeconfig.json
+C:\Users\yoohsy\Desktop\Практические работы\-\WinForm-AMD UI\bin\Debug\net10.0-windows\Local SD Generator.dll
+C:\Users\yoohsy\Desktop\Практические работы\-\WinForm-AMD UI\bin\Debug\net10.0-windows\Local SD Generator.pdb
+C:\Users\yoohsy\Desktop\Практические работы\-\WinForm-AMD UI\obj\Debug\net10.0-windows\Работа.Form1.resources
+C:\Users\yoohsy\Desktop\Практические работы\-\WinForm-AMD UI\obj\Debug\net10.0-windows\Local SD Generator.csproj.GenerateResource.cache
+C:\Users\yoohsy\Desktop\Практические работы\-\WinForm-AMD UI\obj\Debug\net10.0-windows\Local SD Generator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\yoohsy\Desktop\Практические работы\-\WinForm-AMD UI\obj\Debug\net10.0-windows\Local SD Generator.AssemblyInfoInputs.cache
+C:\Users\yoohsy\Desktop\Практические работы\-\WinForm-AMD UI\obj\Debug\net10.0-windows\Local SD Generator.AssemblyInfo.cs
+C:\Users\yoohsy\Desktop\Практические работы\-\WinForm-AMD UI\obj\Debug\net10.0-windows\Local SD Generator.csproj.CoreCompileInputs.cache
+C:\Users\yoohsy\Desktop\Практические работы\-\WinForm-AMD UI\obj\Debug\net10.0-windows\Local SD Generator.sourcelink.json
+C:\Users\yoohsy\Desktop\Практические работы\-\WinForm-AMD UI\obj\Debug\net10.0-windows\Local SD Generator.dll
+C:\Users\yoohsy\Desktop\Практические работы\-\WinForm-AMD UI\obj\Debug\net10.0-windows\refint\Local SD Generator.dll
+C:\Users\yoohsy\Desktop\Практические работы\-\WinForm-AMD UI\obj\Debug\net10.0-windows\Local SD Generator.pdb
+C:\Users\yoohsy\Desktop\Практические работы\-\WinForm-AMD UI\obj\Debug\net10.0-windows\Local SD Generator.genruntimeconfig.cache
+C:\Users\yoohsy\Desktop\Практические работы\-\WinForm-AMD UI\obj\Debug\net10.0-windows\ref\Local SD Generator.dll
+C:\Users\yoohsy\Desktop\Практические работы\-\WinForm-AMD UI\obj\Debug\net10.0-windows\Local SD.2D0B88E5.Up2Date
