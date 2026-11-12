@@ -48,30 +48,34 @@
             numSeed = new NumericUpDown();
             label5 = new Label();
             btnBrowseOutput = new Button();
+            label6 = new Label();
+            label7 = new Label();
+            label8 = new Label();
+            numLoraWeight = new NumericUpDown();
+            lblLoraStatus = new Label();
             ((System.ComponentModel.ISupportInitialize)numSteps).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numCfg).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picResult).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numHeight).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numWidth).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numSeed).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)numLoraWeight).BeginInit();
             SuspendLayout();
             // 
             // txtPrompt
             // 
-            txtPrompt.Location = new Point(575, 64);
+            txtPrompt.Location = new Point(567, 83);
             txtPrompt.Multiline = true;
             txtPrompt.Name = "txtPrompt";
             txtPrompt.Size = new Size(157, 23);
             txtPrompt.TabIndex = 0;
-            txtPrompt.Text = "для позитивного промпта";
             // 
             // txtNegative
             // 
-            txtNegative.Location = new Point(575, 105);
+            txtNegative.Location = new Point(567, 132);
             txtNegative.Name = "txtNegative";
             txtNegative.Size = new Size(157, 23);
             txtNegative.TabIndex = 1;
-            txtNegative.Text = "для негативного промпта";
             // 
             // numSteps
             // 
@@ -96,15 +100,14 @@
             // 
             // txtPose
             // 
-            txtPose.Location = new Point(575, 143);
+            txtPose.Location = new Point(575, 172);
             txtPose.Name = "txtPose";
             txtPose.Size = new Size(100, 23);
             txtPose.TabIndex = 4;
-            txtPose.Text = "для позы";
             // 
             // btnGenerate
             // 
-            btnGenerate.Location = new Point(555, 175);
+            btnGenerate.Location = new Point(557, 199);
             btnGenerate.Name = "btnGenerate";
             btnGenerate.Size = new Size(136, 54);
             btnGenerate.TabIndex = 5;
@@ -141,7 +144,7 @@
             // 
             // btnBrowseLora
             // 
-            btnBrowseLora.Location = new Point(567, 289);
+            btnBrowseLora.Location = new Point(567, 325);
             btnBrowseLora.Name = "btnBrowseLora";
             btnBrowseLora.Size = new Size(108, 46);
             btnBrowseLora.TabIndex = 11;
@@ -152,7 +155,7 @@
             // chkUseLora
             // 
             chkUseLora.AutoSize = true;
-            chkUseLora.Location = new Point(555, 264);
+            chkUseLora.Location = new Point(557, 300);
             chkUseLora.Name = "chkUseLora";
             chkUseLora.Size = new Size(134, 19);
             chkUseLora.TabIndex = 12;
@@ -167,11 +170,10 @@
             lblStatus.Size = new Size(41, 15);
             lblStatus.TabIndex = 13;
             lblStatus.Text = "статус";
-            lblStatus.Click += lblStatus_Click;
             // 
             // btnBrowseModel
             // 
-            btnBrowseModel.Location = new Point(556, 235);
+            btnBrowseModel.Location = new Point(567, 271);
             btnBrowseModel.Name = "btnBrowseModel";
             btnBrowseModel.Size = new Size(119, 23);
             btnBrowseModel.TabIndex = 14;
@@ -243,11 +245,64 @@
             btnBrowseOutput.UseVisualStyleBackColor = true;
             btnBrowseOutput.Click += btnBrowseOutput_Click_1;
             // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(730, 140);
+            label6.Name = "label6";
+            label6.Size = new Size(148, 15);
+            label6.TabIndex = 22;
+            label6.Text = "для негативного промпта";
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Location = new Point(730, 86);
+            label7.Name = "label7";
+            label7.Size = new Size(150, 15);
+            label7.TabIndex = 23;
+            label7.Text = "для позитивного промпта";
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Location = new Point(686, 175);
+            label8.Name = "label8";
+            label8.Size = new Size(57, 15);
+            label8.TabIndex = 24;
+            label8.Text = "для позы";
+            // 
+            // numLoraWeight
+            // 
+            numLoraWeight.DecimalPlaces = 2;
+            numLoraWeight.Increment = new decimal(new int[] { 5, 0, 0, 131072 });
+            numLoraWeight.Location = new Point(693, 338);
+            numLoraWeight.Maximum = new decimal(new int[] { 15, 0, 0, 65536 });
+            numLoraWeight.Name = "numLoraWeight";
+            numLoraWeight.Size = new Size(74, 23);
+            numLoraWeight.TabIndex = 25;
+            numLoraWeight.Value = new decimal(new int[] { 65, 0, 0, 131072 });
+            numLoraWeight.ValueChanged += numLoraWeight_ValueChanged;
+            // 
+            // lblLoraStatus
+            // 
+            lblLoraStatus.AutoSize = true;
+            lblLoraStatus.Location = new Point(576, 28);
+            lblLoraStatus.Name = "lblLoraStatus";
+            lblLoraStatus.Size = new Size(102, 15);
+            lblLoraStatus.TabIndex = 26;
+            lblLoraStatus.Text = "Лора не выбрана";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1165, 666);
+            ClientSize = new Size(966, 490);
+            Controls.Add(lblLoraStatus);
+            Controls.Add(numLoraWeight);
+            Controls.Add(label8);
+            Controls.Add(label7);
+            Controls.Add(label6);
             Controls.Add(btnBrowseOutput);
             Controls.Add(label5);
             Controls.Add(numSeed);
@@ -276,6 +331,7 @@
             ((System.ComponentModel.ISupportInitialize)numHeight).EndInit();
             ((System.ComponentModel.ISupportInitialize)numWidth).EndInit();
             ((System.ComponentModel.ISupportInitialize)numSeed).EndInit();
+            ((System.ComponentModel.ISupportInitialize)numLoraWeight).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -308,5 +364,10 @@
         private NumericUpDown numSeed;
         private Label label5;
         private Button btnBrowseOutput;
+        private Label label6;
+        private Label label7;
+        private Label label8;
+        private NumericUpDown numLoraWeight;
+        private Label lblLoraStatus;
     }
 }
